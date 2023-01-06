@@ -1,0 +1,17 @@
+package Basics;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class test1 {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://www.flipkart.com/");
+		String Qspider=driver.getTitle();
+		String Qspider1=driver.getCurrentUrl();
+		System.out.println(Qspider);
+		System.out.println(Qspider1);
+	}
+
+}
